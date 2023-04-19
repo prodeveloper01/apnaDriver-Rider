@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.walletfragment.BankInfoF"
+    android:background="@color/ColorBackground">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_back"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@string/bank_info"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                />
+
+
+
+        </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_below="@+id/toolbar"
+         android:layout_centerHorizontal="true">
+
+         <RelativeLayout
+             android:layout_marginTop="@dimen/_7sdp"
+             android:layout_marginBottom="@dimen/_7sdp"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_40sdp">
+
+
+             <ImageView
+                 android:scaleType="fitStart"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:id="@+id/iv_user_name"
+                 android:layout_marginStart="@dimen/_20sdp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentStart="true"
+                 android:tint="@color/ColorDarkGray"
+                 app:srcCompat="@drawable/ic_user_stroke"
+                 />
+
+             <RelativeLayout
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_20sdp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_toEndOf="@+id/iv_user_name"
+                 >
+
+                 <LinearLayout
+                     android:layout_centerVertical="true"
+                     android:gravity="center_vertical"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:includeFontPadding="false"
+                         android:text="@string/name"
+                         android:textColor="@color/ColorDarkGray"
+                         android:textSize="@dimen/_11sdp"
+                         android:textStyle="normal"
+                         android:fontFamily="@font/airbnbcerealmedium"
+                         android:gravity="center_vertical"
+                         />
+
+                     <EditText
+                         android:importantForAutofill="no"
+                         android:id="@+id/et_user_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:fontFamily="@font/airbnbcerealmedium"
+                         android:gravity="center_vertical"
+                         android:hint="@string/enter_name"
+                         android:includeFontPadding="false"
+                         android:inputType="textCapSentences"
+                         android:text=""
+                         android:paddingTop="@dimen/_2sdp"
+                         android:paddingBottom="@dimen/_2sdp"
+                         android:background="@null"
+                         android:textColor="@color/ColorBlack"
+                         android:textColorHint="@color/ColorSemiDarkGray"
+                         android:textSize="@dimen/_12sdp"
+                         tools:ignore="RtlCompat"
+                         android:textAlignment="viewStart"
+                         android:textStyle="normal" />
+
+
+                 </LinearLayout>
+
+
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/ColorSemiDarkGray"/>
+
+
+         <RelativeLayout
+             android:layout_marginTop="@dimen/_7sdp"
+             android:layout_marginBottom="@dimen/_7sdp"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_40sdp">
+
+
+             <ImageView
+                 android:scaleType="fitStart"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:id="@+id/iv_bank_name"
+                 android:layout_marginStart="@dimen/_20sdp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentStart="true"
+                 android:tint="@color/ColorDarkGray"
+                 app:srcCompat="@drawable/ic_bank"
+                 />
+
+             <RelativeLayout
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_20sdp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_toEndOf="@+id/iv_bank_name"
+                 >
+
+                 <LinearLayout
+                     android:layout_centerVertical="true"
+                     android:gravity="center_vertical"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:includeFontPadding="false"
+                         android:text="@string/Bank"
+                         android:textColor="@color/ColorDarkGray"
+                         android:textSize="@dimen/_11sdp"
+                         android:textStyle="normal"
+                         android:gravity="center_vertical"
+                         />
+
+                     <EditText
+                         android:importantForAutofill="no"
+                         android:id="@+id/et_bank_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:hint="@string/enter_bank"
+                         android:includeFontPadding="false"
+                         android:inputType="textCapSentences"
+                         android:text=""
+                         android:paddingTop="@dimen/_2sdp"
+                         android:paddingBottom="@dimen/_2sdp"
+                         android:background="@null"
+                         android:textColor="@color/ColorBlack"
+                         android:textColorHint="@color/ColorSemiDarkGray"
+                         android:textSize="@dimen/_12sdp"
+                         tools:ignore="RtlCompat"
+                         android:textAlignment="viewStart"
+                         android:textStyle="normal" />
+
+
+                 </LinearLayout>
+
+
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/ColorSemiDarkGray"/>
+
+         <RelativeLayout
+             android:layout_marginTop="@dimen/_7sdp"
+             android:layout_marginBottom="@dimen/_7sdp"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_40sdp">
+
+
+             <ImageView
+                 android:scaleType="fitStart"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:id="@+id/iv_iban"
+                 android:layout_marginStart="@dimen/_20sdp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentStart="true"
+                 android:tint="@color/ColorDarkGray"
+                 app:srcCompat="@drawable/ic_phone"
+                 />
+
+             <RelativeLayout
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_20sdp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_toEndOf="@+id/iv_iban"
+                 >
+
+                 <LinearLayout
+                     android:layout_centerVertical="true"
+                     android:gravity="center_vertical"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:includeFontPadding="false"
+                         android:text="@string/iban"
+                         android:textColor="@color/ColorDarkGray"
+                         android:textSize="@dimen/_11sdp"
+                         android:textStyle="normal"
+                         android:gravity="center_vertical"
+                         />
+
+                     <EditText
+                         android:importantForAutofill="no"
+                         android:id="@+id/et_iban"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:hint="@string/enter_iban"
+                         android:includeFontPadding="false"
+                         android:inputType="textPersonName"
+                         android:text=""
+                         android:paddingTop="@dimen/_2sdp"
+                         android:paddingBottom="@dimen/_2sdp"
+                         android:background="@null"
+                         android:textColor="@color/ColorBlack"
+                         android:textColorHint="@color/ColorSemiDarkGray"
+                         android:textSize="@dimen/_12sdp"
+                         tools:ignore="RtlCompat"
+                         android:textAlignment="viewStart"
+                         android:textStyle="normal" />
+
+
+                 </LinearLayout>
+
+
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/ColorSemiDarkGray"/>
+
+         <RelativeLayout
+             android:layout_marginTop="@dimen/_7sdp"
+             android:layout_marginBottom="@dimen/_7sdp"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_40sdp">
+
+
+             <ImageView
+                 android:scaleType="fitStart"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:id="@+id/iv_account_number"
+                 android:layout_marginStart="@dimen/_20sdp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentStart="true"
+                 android:tint="@color/ColorDarkGray"
+                 app:srcCompat="@drawable/ic_account_number"
+                 />
+
+             <RelativeLayout
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_20sdp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_toEndOf="@+id/iv_account_number"
+                 >
+
+                 <LinearLayout
+                     android:layout_centerVertical="true"
+                     android:gravity="center_vertical"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:includeFontPadding="false"
+                         android:text="@string/account_number"
+                         android:textColor="@color/ColorDarkGray"
+                         android:textSize="@dimen/_11sdp"
+                         android:textStyle="normal"
+                         android:gravity="center_vertical"
+                         />
+
+                     <EditText
+                         android:importantForAutofill="no"
+                         android:id="@+id/et_account_number"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_vertical"
+                         android:hint="@string/enter_account_number"
+                         android:includeFontPadding="false"
+                         android:inputType="numberSigned"
+                         android:text=""
+                         android:paddingTop="@dimen/_2sdp"
+                         android:paddingBottom="@dimen/_2sdp"
+                         android:background="@null"
+                         android:textColor="@color/ColorBlack"
+                         android:textColorHint="@color/ColorSemiDarkGray"
+                         android:textSize="@dimen/_12sdp"
+                         tools:ignore="RtlCompat"
+                         android:textAlignment="viewStart"
+                         android:textStyle="normal" />
+
+
+                 </LinearLayout>
+
+
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/ColorSemiDarkGray"/>
+
+     </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:gravity="center"
+            android:background="@drawable/ractengle_less_round_solid_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:text="@string/submit"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>

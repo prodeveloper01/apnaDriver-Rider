@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@color/app_color">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/for_effort_less_delivery"
+                android:textAllCaps="false"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:text="@string/allow_us_to_access_your_location"
+                android:textAllCaps="false"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/allow_access_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/ractengle_less_round_solid_black"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/yes_allow"
+                android:textAllCaps="false"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

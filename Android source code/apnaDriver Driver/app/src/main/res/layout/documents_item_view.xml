@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ColorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp">
+
+
+
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/vehicle_insurance"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        />
+
+                    <EditText
+                        android:importantForAutofill="no"
+                        android:id="@+id/et_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pending"
+                        android:includeFontPadding="false"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:background="@null"
+                        android:textColor="@color/ColorDarkGray"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="RtlCompat"
+                        android:textAlignment="viewStart"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tab_view"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/ColorSemiDarkGray"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

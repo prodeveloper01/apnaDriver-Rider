@@ -1,0 +1,336 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">GoGrab Driver App</string>
+
+    <!--    for map functionality Use-->
+    <string name="google_map_key" translatable="false">google_map_key_here</string>
+ 
+    <!--    for google login-->
+    <string name="google_web_client_id" translatable="false">google_web_client_id_from_google_api_console</string>
+ 
+    <!--    for facebook login-->
+
+    <string name="facebook_app_id" translatable="false">facebook_app_id</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb(facebook_app_id)</string>
+   <string name="facebook_client_token" translatable="false">facebook_client_token</string>
+
+  
+
+    <string name="slide_to_cancel"><font size="5">Slide to Cancel</font></string>
+    <string name="something_went_wrong">Something went wrong our team working on it</string>
+    <string name="image_saved">Image saved</string>
+    <string name="click_again">Click Again</string>
+    <string name="your_message">Your Message</string>
+    <string name="sent">Sent</string>
+    <string name="seen_at">Seen at</string>
+    <string name="not_delivered">Not delivered.</string>
+    <string name="this_message_was_deleted">This message was deleted</string>
+    <string name="support">Support</string>
+    <string name="type_your_message_here">Type Your Message Here ..</string>
+    <string name="copy">Copy</string>
+    <string name="delete_this_message">Delete this message</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_photo_from_gallery">Choose Photo from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="tap_again">Tap Again To Exit</string>
+    <string name="camera_denied">camera permission denied</string>
+    <string name="not_found">Not found</string>
+    <string name="cant_empty">Can\'t empty</string>
+    <string name="blank_space_empty">Blank spaces can\'t allow</string>
+    <string name="invalid_phone_no">Invalid phone number format</string>
+    <string name="resend_number_code">Resend Code 00:</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="you_are_online">You are Online</string>
+    <string name="alert">Alert</string>
+    <string name="are_you_sure_to_offline">Are you sure you want to offline?</string>
+    <string name="are_you_sure_to_online">Are you sure you want to online?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="permission_denied">permission denied</string>
+    <string name="location_are_inadequate">Location settings are inadequate, and cannot be fixed here. Fix in Settings.</string>
+    <string name="dummy_name">Jhon Alex</string>
+    <string name="dummy_email">jhonalex@hotmail.com</string>
+    <string name="home">Home</string>
+    <string name="my_jobs">My Jobs</string>
+    <string name="wallet">Wallet</string>
+    <string name="manage_vehicle">Manage Vehicle</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="setting">Setting</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="version">Version</string>
+    <string name="for_effort_less_delivery">For Effortless Delivery</string>
+    <string name="allow_us_to_access_your_location">Allow us to access your location\nfor pickup/dropoff location for delivery</string>
+    <string name="yes_allow">Yes, Allow</string>
+    <string name="logout_status">Logout Status</string>
+    <string name="are_you_sure">Are you sure to want logout ?</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="bank_info">Bank Info</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="name_dot">Name: </string>
+    <string name="dummy_name_two">Alex Smith</string>
+    <string name="Bank">Bank</string>
+    <string name="iban">IBAN</string>
+    <string name="account_number">Account Number</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="support_email">Support@system.com</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="invalid_password">Password must be between 8–20 digit !</string>
+    <string name="new_password_must_differ">New password must be different</string>
+    <string name="password_must_match">Confirm password must be match</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="tap_to_select">Tab to select</string>
+    <string name="search_app_hint">Search …</string>
+    <string name="no_city_found">No city found</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="select_country">Select Country</string>
+    <string name="okay">OK</string>
+    <string name="select_anyone_for_proceed">Select anyone for proceed</string>
+    <string name="verhicle_type">Vehicle Type</string>
+    <string name="manufacture">Manufacture</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="license_plate">License Plate</string>
+    <string name="color">Color</string>
+    <string name="documents">Documents</string>
+    <string name="driving_license">Driving License</string>
+    <string name="vehicle_insurance">Vehicle Insurance</string>
+    <string name="vehicle_registration">Vehicle Registration</string>
+    <string name="national_id_passport">National ID/ Passport</string>
+    <string name="approved">Approved</string>
+    <string name="pending">Pending</string>
+    <string name="uplaod_document">Upload Documents</string>
+    <string name="we_need_to_see_your_name_clearly">We need to see your name clearly printed \non an official document.</string>
+    <string name="add_a_file">Add a file</string>
+    <string name="select_image_from">Select Image From</string>
+    <string name="submit_for_review">Submit For Review</string>
+    <string name="select_any_document_first">Select please any document first</string>
+    <string name="no_job_found">No job found</string>
+    <string name="dumm_pick_time">12:30 AM PAST</string>
+    <string name="dummy_pickup_location">8502 Preston Rd.</string>
+    <string name="dumm_time">1H 0M</string>
+    <string name="dummy_date">Today, 3:45 PM</string>
+    <string name="dummy_fare">$ 24.30</string>
+    <string name="dummy_pickup_detail">Neon Cafe, 23/A Park Avenue</string>
+    <string name="dummy_dropoff_detail">Rex House, 769 Isadore</string>
+    <string name="earning">Earnings</string>
+    <string name="total_earning">Total Earnings</string>
+    <string name="completed_rides">Completed Rides</string>
+    <string name="latest_ride">Latest Ride</string>
+    <string name="recent_rides">Recent Rides</string>
+    <string name="log_in_to_driver_app">Log in to Driver App</string>
+    <string name="manage_your_account_check_notification_and_more">Manage your account, check notification, and more</string>
+    <string name="user_phone_email_user_name">Use phone / Email / Username</string>
+    <string name="continue_with_facebook">Continue With Facebook</string>
+    <string name="continue_with_google">Continue With Google</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="signup">Sign up</string>
+    <string name="facebook_login_cancel">Facebook login cancel</string>
+    <string name="enter_your_phone_no">Enter Phone Number</string>
+    <string name="please_confirm_your_country_code_and_enter_your_phone_number">We\'ll send an SMS with a verification code, SMS fees my apply.</string>
+    <string name="please_confirm_your_email_your_email">We\'ll send an email with a verification code, emial fees my apply.</string>
+    <string name="use_8_20_characters_from_at_least_2_categories_letters_numbers_special_characters">Use 8–20 characters from at least 2 categories: letters, numbers, special characters</string>
+    <string name="you_can_always_change_the_username_later">You can always change the username later</string>
+    <string name="you_can_always_change_the_fullname_later">You can always change the full name later</string>
+    <string name="forgot_password_description">Enter the email address you signed up with we\'ll send you an email that will let you choose another password.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="dummy_number">Phone Number</string>
+    <string name="plus_92">+92</string>
+    <string name="send_code">Send Code</string>
+    <string name="enter_digit_code">Enter 4-digit code</string>
+    <string name="check_your_sms_message_we_ve">Check your sms message we\'ve sent you\nverification code at</string>
+    <string name="check_your_sms_message_we_have">Check your sms message we\'ve sent you\nverification code at +923210000001</string>
+    <string name="resend_sode_time">Resend code : </string>
+    <string name="what_your_emai">What\'s your email?</string>
+    <string name="check_your_email_we_ve">Check your email we\'ve sent you verification code at</string>
+    <string name="next">Next</string>
+    <string name="create_password">Create password</string>
+    <string name="create_username">Create Username</string>
+    <string name="invalid_email">Email format is invalid</string>
+    <string name="phone">Phone</string>
+    <string name="forgot_password_">Forgot Password?</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="change_your_password">Change your password</string>
+    <string name="terms_and_condition_detail">By continuing, you agree to GoGrab Terms of Use \nand confirm that you have read GoGrab Privacy Policy.</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="make_sure_check_your_internet">Make sure your Wifi or data is enable\nTurn on mobile data or Wifi</string>
+    <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_binder">Enable your location to start find the \n request around you</string>
+    <string name="try_again">Try Again</string>
+    <string name="allow_location">Enable Location</string>
+    <string name="enable_your_loaction">Enable Your Location</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="congrats_booking_confirm">Congrats! Booking confirmed.</string>
+    <string name="you_have_to_arrive_at">You have to arrive at</string>
+    <string name="pickup_location_">Pickup location :</string>
+    <string name="arrived_for_pickup">Arrived For Pickup</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="end_trip">End Trip</string>
+    <string name="picking_up">Picking Up</string>
+    <string name="picked">Picked</string>
+    <string name="dropoff">Dropoff</string>
+    <string name="other">Other</string>
+    <string name="how_much_cash_have_you_received">How much cash have you received?</string>
+    <string name="thank_you">Thank you</string>
+    <string name="done">Done</string>
+    <string name="how_was_your_last_ride_with">How was your last ride with</string>
+    <string name="pickup_location">Pickup location</string>
+    <string name="dropoff_location">Dropoff location</string>
+
+    <string name="pickup_location_dot">Pickup location:</string>
+    <string name="dropoff_location_dot">Dropoff location:</string>
+    <string name="payout">Payout</string>
+    <string name="login">Log In</string>
+    <string name="email_username">Email / Username</string>
+    <string name="password">Password</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verify_email">Verify email</string>
+    <string name="update_phone_no">Update Phone No</string>
+    <string name="update_email">Update Email</string>
+    <string name="receive_info_about_new_update">Receive info about new updates and awesome promos in your inbox</string>
+    <string name="login_status">Login Status</string>
+    <string name="verification_status">Verification Status</string>
+    <string name="signup_status">Signup Status</string>
+    <string name="job_details">Job Details</string>
+    <string name="follow_the_instruction_you_have_received_in_email">Follow the instructions you have received in the email and upload it securly form here.</string>
+    <string name="change_language">Change Language</string>
+    <string name="english">English</string>
+    <string name="select_language">Select Language</string>
+    <string name="Language_status">Language Selection Status</string>
+    <string name="year_above">Year can\'t be above current year</string>
+    <string name="select_ride_type">Select Ride Type</string>
+    <string name="enter_manufacture_company">Enter Manufacture Company</string>
+    <string name="enter_model_name">Enter Model Name</string>
+    <string name="enter_year_of_manufacture">Enter Year of Manufacture</string>
+    <string name="enter_lincence_plate">Enter License Plate Number</string>
+    <string name="enter_vehicle_type">Enter Vehical Color</string>
+    <string name="ride_type_empty">Vehicle type can\'t be empty</string>
+    <string name="manufacture_empty">Manufacture can\'t be empty</string>
+    <string name="model_empty">Model can\'t be empty</string>
+    <string name="year_empty">Year can\'t be empty</string>
+    <string name="license_plate_empty">License Plate type can\'t be empty</string>
+    <string name="color_empey">Color type can\'t be empty</string>
+    <string name="select_vehicle_type">Select Vehicle Type</string>
+    <string name="gender_selection_status">Gender Selection Status</string>
+    <string name="country_selection_status">Country Selection Status</string>
+    <string name="vehicle_selection_status">Vehicle Selection Status</string>
+    <string name="change_applied">Changes applied successfully</string>
+    <string name="rejected">Rejected</string>
+    <string name="no_have_any_document_history">You don\'t have any Document sofar.</string>
+    <string name="sucessfully_uploaded">Document successfully uploaded</string>
+    <string name="username_length_must_be">User name length must be between 4–14</string>
+    <string name="successfully_change_password">Successfully change password</string>
+    <string name="edit_profile_status">Edit Profile Status</string>
+    <string name="successfully_update_username">Successfully updated</string>
+    <string name="successfully_give_rating">Successfully give rating to customer</string>
+    <string name="iban_is_too_short">IBAN is too short</string>
+    <string name="iban_is_too_long">IBAN is too long</string>
+    <string name="mis_match_account_number_with_Iban">Account number is mis-match with IBAN</string>
+    <string name="you_have_insuficent_balance">You have in suficent balance in your wallet</string>
+    <string name="want_to_ride_with_you">want to ride with you</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="send_message">Send Messege</string>
+    <string name="make_a_phone_call">Make a call!</string>
+    <string name="call_to">Call to</string>
+    <string name="from_your_phone">from you phone.</string>
+    <string name="call">Call</string>
+    <string name="you_cant_online_until_your_verhicle_is_not_set">You can\'t online until your vehicle is not set.</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="need_background_location_for_endless_location_services">Need your location permission for smooth service</string>
+    <string name="permission">Permission</string>
+    <string name="permission_alert">Permission Alert</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_bank">Enter Bank Name</string>
+    <string name="enter_iban">Enter IBAN Number</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="camera_permission_successfully_granted">Camera permission successfully granted</string>
+    <string name="recording_permission_successfully_granted">Recording permission successfully granted</string>
+    <string name="storage_permission_successfully_granted">Storage permission successfully granted</string>
+    <string name="default_notification_channel_id" tools:ignore="MissingTranslation">GrabMyTaxiDriverNotificationId</string>
+    <string name="show_wo">Show</string>
+    <string name="history">History</string>
+
+    <string name="my_orders">My Orders</string>
+    <string name="new_order">New</string>
+    <string name="processing">Processing</string>
+    <string name="delivered">Delivered</string>
+
+    <string name="you_don_t">You don\'t have any Order so far.</string>
+    <string name="order">Order #</string>
+
+    <string name="reject">Reject</string>
+    <string name="details">Details</string>
+    <string name="completed_orders">Completed</string>
+
+
+    <string name="pickup_information">Pickup information</string>
+    <string name="map_it">Map it</string>
+    <string name="delivery_information">Delivery information</string>
+    <string name="items">Item Name</string>
+    <string name="items_details">Item details</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="job_total">Total Amount</string>
+    <string name="less_txt">less</string>
+    <string name="more_txt">more</string>
+    <string name="get_signature_of_user">Get signature of user</string>
+
+    <string name="order_delivered">Order Delivered Successfully</string>
+    <string name="on_the_way">On The Way To Dropoff</string>
+    <string name="order_picked">Order Picked</string>
+    <string name="on_the_way_pick">On The Way To Pickup</string>
+
+    <string name="no_email">no email found</string>
+    <string name="no_number">No number found</string>
+    <string name="online_first">Your are offline. In order to perform this action please online first</string>
+    <string name="add_signature">Add Signature</string>
+
+    <string name="please_enter_name">Please Enter Signed Person Name</string>
+    <string name="who_signed_for_the_delivery">Who signed for the delivery?</string>
+    <string name="reset">Reset</string>
+
+    <string name="report_a_problem">Report a Problem</string>
+    <string name="cash">Cash</string>
+    <string name="pkgsize">Package Size</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="instruction">Instruction</string>
+    <string name="pickup_time">Pickup Time : </string>
+    <string name="delivery_time">Delivery Time : </string>
+    <string name="rides">Ride</string>
+    <string name="parcel">Delivery</string>
+    <string name="food">Food</string>
+
+    <string name="location_heading_denied_sub">Go to setting and follow these steps</string>
+    <string name="location_heading_denied_step_1">1. Tap into <font color='#000000'> permission</font></string>
+    <string name="location_heading_denied_step_2">2. Tap into <font color='#000000'> Location </font></string>
+    <string name="location_heading_denied_step_3">3. Select Allow</string>
+    <string name="location_heading_denied_heading">Allow GoGrab to access your location for more accurate and effortless Ride , Food and Parcel Delivery</string>
+    <string name="genral_permison">2. Select Camera and Flies and media </string>
+    <string name="allow">Open Setting</string>
+
+    <string name="to_upload_image_permission_string">To Upload Image Allow GoGrab to access your camera and storage</string>
+    <string name="to_upload_image_permission_string_1">To Upload Image Allow GoGrab to access your camera and storage</string>
+    <string name="we_need_storage_camera_recording_permission_for_make_new_video">We need Camera and Storage permission in order for you to upload the document</string>
+    <string name="we_need_storage_camera">We need Camera and Storage permission in order for you to upload the image</string>
+
+    <string name="we_need_acurate_ride_permission">This app requires location access to find you better ride , parcel and food delivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+
+    <string name="etName">Name<font color='#EF716B'> *</font></string>
+    <string name="etPhoneNumber">Phone number<font color='#EF716B'> *</font></string>
+
+</resources>

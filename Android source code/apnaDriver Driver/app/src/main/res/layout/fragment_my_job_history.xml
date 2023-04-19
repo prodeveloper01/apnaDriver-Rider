@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/job_container"
+    android:background="@color/ColorBackground"
+    tools:context=".activitiesandfragments.myjobhistory.MyJobHistoryF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshlayout_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressbar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"/>
+
+
+            <ProgressBar
+                android:id="@+id/load_more_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_no_data"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:text="@string/no_job_found"
+                android:textColor="@color/ColorDarkGray"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:textSize="@dimen/_11sdp" />
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/document_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.documentfragment.DocumentManageF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_nav_menu"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                app:srcCompat="@drawable/ic_nav_menu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/documents"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/no_have_any_document_history"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_documents"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            app:srcCompat="@drawable/ic_upload_doc" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ColorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="@dimen/_5sdp"
+        android:text=""
+        android:textStyle="normal"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/ColorSemiDarkGray"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:text="@string/your_message"
+        android:textStyle="normal"
+        android:textSize="@dimen/_11sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:includeFontPadding="false"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/datetxt"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/ColorBlack"
+        />
+
+</RelativeLayout>

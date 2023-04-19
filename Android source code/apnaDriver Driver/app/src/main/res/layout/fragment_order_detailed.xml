@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_acticvityDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                app:srcCompat="@drawable/ic_arrow_left"
+                app:tint="@color/ColorBlack" />
+
+            <TextView
+                android:id="@+id/order_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_text"
+                android:visibility="visible" />
+
+
+            <RelativeLayout
+                android:id="@+id/iv_menu_open"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_three_dot"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/div_button"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/main_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/margin_end">
+
+                    <RelativeLayout
+                        android:id="@+id/image_rlt"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp">
+
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerVertical="true"
+                            app:actualImageScaleType="centerCrop"
+                            app:placeholderImage="@drawable/ic_profile_gray"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:roundAsCircle="true" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/name_rlt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/image_rlt"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/transparent"
+                            android:paddingStart="0dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size" />
+
+
+                        <LinearLayout
+                            android:id="@+id/upper_div"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/phone_btn"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_16sdp"
+                                    android:layout_height="@dimen/_16sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    app:srcCompat="@drawable/ic_call" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/chat_btn"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_16sdp"
+                                    android:layout_height="@dimen/_16sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    app:srcCompat="@drawable/ic_chat" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_end"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pickup_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/pickup_information"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_pickup_info"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        android:visibility="visible"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_pickup_name"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_pickup_number"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_mapit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_below="@+id/tv_pickup_number"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/map_it"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_pickup_email"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:lineSpacingExtra="3dp"
+                        android:minHeight="28dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:text="@string/delivery_information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_dropoff_info"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_dropoff_info_name"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/tv_dropoff_info_number"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info_mapit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/map_it"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+                    <TextView
+                        android:id="@+id/tv_dropoff_info_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_dropoff_info_email"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="3dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address"
+                        tools:ignore="RtlCompat" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_parcel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_end"
+                        android:layout_marginEnd="@dimen/margin_end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/items"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_sub_heading" />
+
+                        <TextView
+                            android:id="@+id/item_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcerealbook"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/order_detail_address"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/item_description_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_end"
+                        android:layout_marginEnd="@dimen/margin_end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/pkgsize"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_sub_heading" />
+
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:id="@+id/item_desc_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_about"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/airbnbcerealbook"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/order_detail_address"
+                            app:trimCollapsedText="@string/more_txt"
+                            app:trimExpandedText="@string/less_txt"
+                            app:trimLength="80"
+                            app:trimMode="trimModeLength" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/food_recycler_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="@dimen/margin_end"
+                        android:text="@string/items"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_store_name"
+                        android:layout_marginStart="@dimen/margin_end"
+                        android:layout_marginEnd="@dimen/margin_end" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/line_below_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/instruction_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/instruction"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+
+                    <TextView
+                        android:id="@+id/tv_deliveryInstruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/line_below_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:textAlignment="viewStart"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/payment_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_type"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+
+                    <TextView
+                        android:id="@+id/tv_payment_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/line_below_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:textAlignment="viewStart"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_total"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_sub_heading" />
+
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/airbnbcerealbook"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/order_detail_address" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/div_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_Rider_status"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ractengle_less_round_solid_black"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:stateListAnimator="@null"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_Open_signature"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/margin_end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ractengle_less_round_stroke_primary"
+                android:stateListAnimator="@null"
+                android:text="@string/get_signature_of_user"
+                android:textAllCaps="false"
+                android:textColor="@color/app_color"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

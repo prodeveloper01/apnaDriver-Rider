@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.accounts.signInfragment.SigninPhoneF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/d_bottom_gray_line">
+
+                <RelativeLayout
+                    android:id="@+id/no_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_34sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/plus_92"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/ColorBlack"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/iv_country_code_arrow"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_country_code"
+                        android:tint="@color/ColorSemiDarkGray"
+                        app:srcCompat="@drawable/ic_arrow_down" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:layout_marginEnd="@dimen/_11sdp"
+                    android:layout_toEndOf="@+id/no_start"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:background="@color/ColorSemiDarkGray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/no_center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_phoneno"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_34sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/dummy_number"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="phone"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/ColorBlack"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_terms_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/terms_and_condition_detail"
+                android:textAlignment="center"
+                android:textColor="@color/ColorDarkGray"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_send_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/ractengle_less_round_solid_black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/send_code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,177 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activitiesandfragments.mainnavigation.MainActivity"
+    android:keepScreenOn="true"
+    android:background="@color/ColorBackground">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/fl_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/location_layout_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.gms.maps.MapView
+                    android:keepScreenOn="true"
+                    android:id="@+id/map_main_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:background="@drawable/d_gradient_for_map"/>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:background="@drawable/d_bottom_to_top_grediant"/>
+
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:id="@+id/toolbar"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/iv_menu"
+                        android:paddingStart="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_24sdp"
+                        android:layout_width="@dimen/_58sdp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_nav_menu"
+                        app:tint="@color/ColorBlack" />
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_35sdp"
+                        android:layout_marginEnd="@dimen/_35sdp"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center"
+                        />
+
+
+                    <FrameLayout
+                        android:layout_marginStart="@dimen/_24sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:gravity="center|end"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_21sdp">
+
+
+                        <vn.luongvo.widget.iosswitchview.SwitchView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/switch_mode"
+                            android:text=""
+                            android:textAlignment="viewEnd"
+                            android:includeFontPadding="false"
+                            android:clickable="false"
+                            android:focusableInTouchMode="false"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:id="@+id/tab_switch_mode"/>
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/map_bar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/earth_btn"
+                        app:srcCompat="@drawable/ic_google_earth_two" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/current_location_btn"
+                        app:srcCompat="@drawable/ic_currentlocation" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/no_location_layout_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/no_location_permission_layout"/>
+
+        </FrameLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="@dimen/_185sdp"
+            android:layout_height="match_parent"
+            android:id="@+id/navigation"
+            android:background="@color/ColorBackground"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+            <include layout="@layout/drawer"/>
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

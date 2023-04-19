@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.accounts.signupfragment.ForgotEmailVerificationF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_back"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@string/verification_code"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/verify_email"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sub_title"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/check_your_sms_message_we_have"
+                    android:textColor="@color/ColorDarkGray"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.chaos.view.PinView
+                    android:id="@+id/et_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/ColorBlack"
+                    android:textColorHint="@color/ColorSemiDarkGray"
+                    android:textSize="@dimen/_19sdp"
+                    app:hideLineWhenFilled="false"
+                    app:itemCount="4"
+                    app:itemHeight="@dimen/_67sdp"
+                    app:itemSpacing="@dimen/_15sdp"
+                    app:itemWidth="@dimen/_53sdp"
+                    app:lineColor="@color/ColorSemiDarkGray"
+                    app:lineWidth="@dimen/_1sdp"
+                    app:viewType="line" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_code_resend"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:text="@string/resend_number_code"
+                android:textColor="@color/ColorDarkGray"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center_vertical"
+                />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/btn_resend_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:gravity="center"
+                android:background="@drawable/ractengle_less_round_solid_black"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="false"
+                    android:text="@string/resend_code"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

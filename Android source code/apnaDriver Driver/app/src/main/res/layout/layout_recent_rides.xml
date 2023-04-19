@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:visibility="gone"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activitiesandfragments.earningfragments.EarningF"
+    tools:showIn="@layout/layout_recent_rides">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center_vertical|start"
+                android:includeFontPadding="false"
+                android:text="@string/recent_rides"
+                android:textAlignment="viewStart"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshlayout_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/no_job_found"
+                android:textColor="@color/ColorDarkGray"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    android:id="@+id/signup_container"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.accounts.signupfragment.SignupPhoneF">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_back"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@string/signup"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/enter_your_phone_no"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/please_confirm_your_country_code_and_enter_your_phone_number"
+                    android:textColor="@color/ColorDarkGray"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:background="@drawable/d_bottom_gray_line"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp">
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/no_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_34sdp"
+                        android:includeFontPadding="false"
+                        android:hint="@string/plus_92"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:text=""
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:background="@null"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        android:focusable="false"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        tools:ignore="RtlCompat"
+                        android:textAlignment="viewStart"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_country_code_arrow"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:tint="@color/ColorSemiDarkGray"
+                        app:srcCompat="@drawable/ic_arrow_down"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_country_code"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:layout_marginEnd="@dimen/_11sdp"
+                    android:id="@+id/no_center"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/no_start"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/ColorSemiDarkGray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/no_center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_phoneno"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_34sdp"
+                        android:includeFontPadding="false"
+                        android:hint="@string/dummy_number"
+                        android:text=""
+                        android:importantForAutofill="no"
+                        android:inputType="phone"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:background="@null"
+                        android:textColor="@color/ColorBlack"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        tools:ignore="RtlCompat"
+                        android:textAlignment="viewStart"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_25sdp"
+                android:id="@+id/btn_send_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:gravity="center"
+                android:background="@drawable/ractengle_less_round_solid_black"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="false"
+                    android:text="@string/send_code"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

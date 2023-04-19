@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".activitiesandfragments.mainnavigation.NoInternetA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_no_job"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            app:srcCompat="@drawable/ic_wifi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="@string/no_internet"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal"
+            android:singleLine="true"
+            android:fontFamily="@font/airbnbcerealmedium"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="@string/make_sure_check_your_internet"
+            android:textColor="@color/ColorSemiDarkGray"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:fontFamily="@font/airbnbcerealmedium"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="@string/try_again"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal"
+            android:singleLine="true"
+            android:fontFamily="@font/airbnbcerealmedium"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

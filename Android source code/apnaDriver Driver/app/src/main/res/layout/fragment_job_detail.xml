@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    tools:context=".activitiesandfragments.myjobhistory.JobDetailF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                app:srcCompat="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/job_details"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_my_job"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_175sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:roundedCornerRadius="@dimen/_8sdp"
+                app:roundingBorderColor="@color/ColorWhite"
+                app:roundingBorderWidth="@dimen/_2sdp"
+                app:placeholderImage="@drawable/image_placeholder"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dropoff_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toStartOf="@+id/tv_ride_fare"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical|start"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/tv_ride_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical|end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/dummy_fare"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/view_left"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_pickup"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/ic_circle_stroke" />
+
+
+                    <View
+                        android:layout_width="@dimen/_2sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/verticle_line_dotted_primary"
+                        android:gravity="center" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_dropoff"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/ic_location_pin" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/view_left">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcerealmedium"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="@string/pickup_location"
+                                android:textColor="@color/ColorDarkGray"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:id="@+id/tv_pickup_loc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcerealmedium"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="@string/dummy_pickup_detail"
+                                android:textColor="@color/ColorBlack"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcerealmedium"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="@string/dropoff_location"
+                                android:textColor="@color/ColorDarkGray"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:id="@+id/tv_dropoff_loc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcerealmedium"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="@string/dummy_dropoff_detail"
+                                android:textColor="@color/ColorBlack"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <com.willy.ratingbar.ScaleRatingBar
+                    android:id="@+id/simpleRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:srb_clearRatingEnabled="false"
+                    app:srb_clickable="false"
+                    app:srb_drawableEmpty="@drawable/ic_star_stroke"
+                    app:srb_drawableFilled="@drawable/ic_star_fill"
+                    app:srb_isIndicator="false"
+                    app:srb_minimumStars="0"
+                    app:srb_numStars="5"
+                    app:srb_rating="0"
+                    app:srb_scrollable="false"
+                    app:srb_starHeight="@dimen/_15sdp"
+                    app:srb_starPadding="@dimen/_2sdp"
+                    app:srb_starWidth="@dimen/_12sdp"
+                    app:srb_stepSize="0.5" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_customer"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:roundAsCircle="true"
+                    app:placeholderImage="@drawable/ic_profile_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_toStartOf="@+id/simpleRatingBar"
+                    android:layout_toEndOf="@+id/img_customer">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_customer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcerealmedium"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="@string/name"
+                            android:textColor="@color/ColorBlack"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_height">@dimen/_40sdp</dimen>
+
+    <dimen name="text_size_heading">@dimen/_23sdp</dimen>
+
+    <dimen name="toolbarTextSize">@dimen/_14sdp</dimen>
+
+    <dimen name="text_Size10">@dimen/_10sdp</dimen>
+
+    <dimen name="text_Size9">@dimen/_9sdp</dimen>
+
+    <dimen name="text_Size11">@dimen/_11sdp</dimen>
+
+    <dimen name="text_Size12">@dimen/_12sdp</dimen>
+
+    <dimen name="text_Size8">@dimen/_8sdp</dimen>
+
+    <dimen name="btn_textSize">@dimen/_12sdp</dimen>
+
+    <dimen name="btn_height">@dimen/_38sdp</dimen>
+
+    <dimen name="horizontal_margin">@dimen/_12sdp</dimen>
+
+    <dimen name="horizontal_margin_toolbar">@dimen/_9sdp</dimen>
+
+    <dimen name="image_corners">@dimen/_5sdp</dimen>
+
+    <dimen name="toolbar">@dimen/_37sdp</dimen>
+    <dimen name="heading_text">@dimen/_13sdp</dimen>
+    <dimen name="heading_text_order_history">@dimen/_14sdp</dimen>
+    <dimen name="normal_text">@dimen/_10sdp</dimen>
+    <dimen name="text_size">@dimen/_11sdp</dimen>
+    <dimen name="heading_label">@dimen/_14sdp</dimen>
+    <dimen name="drawer_txt">@dimen/_11sdp</dimen>
+    <dimen name="order_detail_address">@dimen/_13sdp</dimen>
+    <dimen name="order_detail_adapter">@dimen/_10sdp</dimen>
+    <dimen name="text_order_size">@dimen/_14sdp</dimen>
+    <dimen name="text_size_sub_heading">@dimen/_10sdp</dimen>
+    <dimen name="change_button_text">@dimen/_10sdp</dimen>
+    <dimen name="_11dp">@dimen/_10sdp</dimen>
+    <dimen name="accept_btn_txt_size">@dimen/_11sdp</dimen>
+    <dimen name="back_button_padding">@dimen/_11sdp</dimen>
+    <dimen name="margin_start">@dimen/_15sdp</dimen>
+    <dimen name="margin_end">@dimen/_15sdp</dimen>
+    <dimen name="arrow_left">0dp</dimen>
+    <dimen name="box_height">@dimen/_50sdp</dimen>
+    <dimen name="menu_btn_padding">@dimen/_6sdp</dimen>
+    <dimen name="menu_button_start">@dimen/_9sdp</dimen>
+    <dimen name="button_height">45dp</dimen>
+
+</resources>

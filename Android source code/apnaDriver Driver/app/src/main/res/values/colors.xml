@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#27292D</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#27292D</color>
+    <color name="ColorDarkGray">#787878</color>
+    <color name="ColorSemiDarkGray">#C2C2C2</color>
+    <color name="ColorLightGray">#F2F2F2</color>
+    <color name="ColorBlue">#0095DA</color>
+    <color name="ColorAppTheme">#27292D</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="ColorWhite_5">#0DFFFFFF</color>
+    <color name="ColorBlack">#000000</color>
+    <color name="black">#000000</color>
+    <color name="ColorWhite">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ColorBackground">#FFFFFF</color>
+    <color name="bg_inner_recycler_screen">#ffffff</color>
+    <color name="tab_color">#EFEFF1</color>
+    <color name="text_color_gray">#9B9B9B</color>
+    <color name="app_color">#00b14f</color>
+    <color name="text_color_black">#FF000000</color>
+    <color name="text_color_white">#FFFFFFFF</color>
+    <color name="red">#D50000</color>
+</resources>

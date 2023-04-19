@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".activitiesandfragments.accounts.signupfragment.SignupFullNameF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_back"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                app:tint="@color/ColorBlack"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@string/signup"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/enter_your_full_name"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/you_can_always_change_the_username_later"
+                    android:textColor="@color/ColorDarkGray"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:background="@drawable/d_bottom_gray_line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_34sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/first_name"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textCapSentences"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/ColorBlack"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/d_bottom_gray_line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_34sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/airbnbcerealmedium"
+                        android:gravity="center_vertical"
+                        android:hint="@string/last_name"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textCapSentences"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/ColorBlack"
+                        android:textColorHint="@color/ColorSemiDarkGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/ractengle_less_round_solid_black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcerealmedium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

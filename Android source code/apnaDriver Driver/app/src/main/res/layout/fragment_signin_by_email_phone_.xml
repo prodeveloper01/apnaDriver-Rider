@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    android:clickable="true"
+    android:id="@+id/main_signin_container"
+    tools:context=".activitiesandfragments.accounts.signInfragment.SigninByEmailPhoneF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_back"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_24sdp"
+                android:tint="@color/ColorBlack"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:includeFontPadding="false"
+                android:text="@string/login"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/airbnbcerealmedium"
+                android:gravity="center"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_centerHorizontal="true"
+              android:layout_alignParentTop="true"
+              android:id="@+id/tab_layout"
+              android:orientation="horizontal"
+              android:layout_marginStart="@dimen/_20sdp"
+              android:layout_marginEnd="@dimen/_20sdp"
+              android:background="@drawable/d_bottom_gray_line"
+              android:paddingBottom="0.3dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <com.google.android.material.tabs.TabLayout
+                  android:id="@+id/tabs"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/_40sdp"
+                  android:gravity="center"
+                  app:tabBackground="@color/ColorWhite"
+                  app:tabGravity="fill"
+                  app:tabIndicatorColor="@color/ColorBlack"
+                  app:tabMode="fixed"
+                  app:tabPaddingEnd="0dp"
+                  app:tabTextAppearance="@style/tab_text"
+                  app:tabIndicatorHeight="0.7dp"
+                  app:tabPaddingStart="0dp"
+                  app:tabSelectedTextColor="@color/ColorBlack"
+                  app:tabTextColor="@color/ColorSemiDarkGray" />
+
+          </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/tab_layout" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
